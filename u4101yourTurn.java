@@ -6,7 +6,17 @@ public class u4101yourTurn {
 
         System.out.println("\nFactorial using iteration: " + factorialRec(5));
 
+        
+
+        System.out.println("\nFibonacci using iteration: " + fibIter(7));
+
+        System.out.println("\nFibonacci using iteration: " + fibRec(7));
+
+        
+
+        
         System.out.println("\nReverse String using iteration: " + reverse("abcdefgh"));
+
 
     } // close main
 
@@ -22,6 +32,18 @@ public class u4101yourTurn {
     }
 
     public int factorialRec(int num){
+        return 0;
+    }
+
+
+
+    // write an iterative Fibonacci method
+    // and a recursive Fibonacci method
+    public int fibIter(int num){
+        return 0;
+    }
+
+    public int fibRec(int num){
         return 0;
     }
 
