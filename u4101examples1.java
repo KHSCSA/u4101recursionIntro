@@ -13,11 +13,13 @@ public class u4101examples1{
         System.out.println("\n\n2) iterative count using parameter");	
         count2i(5);
 
+        System.out.println("\n\n2) post-recursive count using parameter");
+        count2rPost(5);
+
         System.out.println("\n\n2) pre-recursive count using parameter");
         count2rPre(5);
 
-        System.out.println("\n\n2) post-recursive count using parameter");
-        count2rPost(5);
+        
 
 
 
@@ -26,11 +28,13 @@ public class u4101examples1{
         System.out.println("\n\n3) iterative count using parameters");	
         count3i(5, 10);
 
+        System.out.println("\n\n3) post-recursive count using parameters");
+        count3rPost(5, 10);
+
         System.out.println("\n\n3) pre-recursive count using parameters");
         count3rPre(5, 10);
 
-        System.out.println("\n\n3) post-recursive count using parameters");
-        count3rPost(5, 10);
+
 
 
 
@@ -64,16 +68,16 @@ public class u4101examples1{
     }
 
     // recursive count using parameter
-    // 'pre-recursive print'
-    public static void count2rPre(int num){
+    // 'post-recursive'
+    public static void count2rPost(int num){
         System.out.print(num + "  ");
         if(num > 1)
             count2rPre(num-1);
     }
 
     // recursive count using parameter
-    // 'post-recursive print'
-    public static void count2rPost(int num){
+    // 'pre-recursive'
+    public static void count2rPre(int num){
         if(num > 1)
             count2rPost(num-1);
         System.out.print(num + "  ");
@@ -89,13 +93,6 @@ public class u4101examples1{
         }
     }
 
-    // pre-recursive count between
-    public static void count3rPre(int a, int b){
-        if (a <= b){
-            count3rPre(a+1,b);
-            System.out.print(a + "  ");
-        }
-    }
 
     // post-recursive count between
     public static void count3rPost(int a, int b){
@@ -104,6 +101,15 @@ public class u4101examples1{
             count3rPost(a+1,b);
         }
     }
+
+    // pre-recursive count between
+    public static void count3rPre(int a, int b){
+        if (a <= b){
+            count3rPre(a+1,b);
+            System.out.print(a + "  ");
+        }
+    }
+
 
 
 
