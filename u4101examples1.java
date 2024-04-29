@@ -1,7 +1,7 @@
 public class u4101examples1{
     static int k = 0;
     public static void main(String[ ] args){
-        System.out.println("\n\n1) iterative count using class variable");	
+        System.out.println("\n\n1) iterative count using loop variable");	
         count1i();
 
         System.out.println("\n\n1) recursive count using class variable");
@@ -41,17 +41,17 @@ public class u4101examples1{
     } // close main ----------------------------------------------
 
 
-    // iterative count up using class variable
+    // iterative count up using loop variable
     public static void count1i(){
         for (int k = 1; k <= 10; k++)
-                System.out.print(k + "  ");
+            System.out.print(k + "  ");
     }
 
     // recursive count up using class variable
     public static void count1r(){
         k++;
         System.out.print(k + "  ");
-            if (k < 10) count1r();
+        if (k < 10) count1r();
     }
 
     // -------------------------------------------------
