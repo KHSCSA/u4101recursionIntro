@@ -8,9 +8,9 @@ public class u4101yourTurn {
 
         
 
-        System.out.println("\nFibonacci using iteration: " + fibIter(7));
+        System.out.println("\nnth Fibonacci using iteration: " + fibIter(7));
 
-        System.out.println("\nFibonacci using iteration: " + fibRec(7));
+        System.out.println("\nnth Fibonacci using iteration: " + fibRec(7));
 
         
 
@@ -27,11 +27,11 @@ public class u4101yourTurn {
     // ex: the factorial of 5 is 5 * 4 * 3 * 2 * 1
     // write an iterative factorial method
     // and a recursive factorial method
-    public int factorialIter(int num){
+    public static int factorialIter(int num){
         return 0;
     }
 
-    public int factorialRec(int num){
+    public static int factorialRec(int num){
         return 0;
     }
 
@@ -39,11 +39,11 @@ public class u4101yourTurn {
 
     // write an iterative Fibonacci method
     // and a recursive Fibonacci method
-    public int fibIter(int num){
+    public static int fibIter(int num){
         return 0;
     }
 
-    public int fibRec(int num){
+    public static int fibRec(int num){
         return 0;
     }
 
@@ -52,8 +52,8 @@ public class u4101yourTurn {
 
     // method reverse(String) receives a string
     // and uses an iterative loop to reverse the string
-    public String reverse(String){
-        return 0;
+    public static String reverse(String s){
+        return '';
     }
 
 
